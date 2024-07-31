@@ -50,7 +50,7 @@
 										</span>
 										<div class="descrWrap">
 											<strong class="title d-block fwMedium text-white">Email Us:</strong>
-											<p><a href="mailto:Mail@methusmsolutions.com">Mail@methusmsolutions.com</a></p>
+											<p><a href="mailto:perrydeedollarmethus.com">perrydeedollarmethus.com</a></p>
 										</div>
 									</li>
 									
@@ -68,7 +68,7 @@
 					<div class="container">
 						<!-- logo -->
 						<div class="logo">
-							<a href="home.html"> <h2>logo</h2>
+							<a href="index.html"> <img src="images/logo.png">
 							<!-- logo Mail@methusmsolutions.com	<img src="images/logo.png" class="img-fluid" alt="Consults | ">
 							--></a>
 						</div>
@@ -95,7 +95,7 @@
 										<a class="nav-link" href="#scrollto5">Contact Us</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="#scrollto3">Currency Converter</a>
+										<a href="cal.php">Currency Converter</a>
 									</li>
 								</ul>
 							</div>
@@ -391,12 +391,12 @@
 										</div>
 										<div class="col-12 col-sm-6">
 											<div class="form-group">
-												<input type="tel" class="form-control w-100 d-block" placeholder="Your Phone *" required data-error="NEW ERROR MESSAGE" id="tel">
+												<input type="tel" class="form-control w-100 d-block" placeholder="Your Phone *" required data-error="NEW ERROR MESSAGE" id="phone">
 											</div>
 										</div>
 										<div class="col-12 col-sm-6">
 											<div class="form-group">
-												<select class="custom-select w-100 d-block" required data-error="NEW ERROR MESSAGE" id="sub">
+												<select class="custom-select w-100 d-block" required data-error="NEW ERROR MESSAGE" id="topic">
 													<option value="1">I Would Like to Discuss About Money Transfer</option>
 													<option value="2">I Would Like to Discuss About Phones and Accessories</option>
 													<option value="3">I Would Like to Discuss About iCloud Unlocking</option>
@@ -414,7 +414,7 @@
 										</div>
 									</div>
 									<div class="text-center">
-										<button id="form-submit" class="btn btnTheme btnNoOver">Send Message <i class="bx bx-right-arrow-alt icn ml-1"><span class="sr-only">icon</span></i></button> <br> <br>
+										<button id="form-submit" onclick="sendmail()" class="btn btnTheme btnNoOver">Send Message <i class="bx bx-right-arrow-alt icn ml-1"><span class="sr-only">icon</span></i></button> <br> <br>
 									</div>
 								</form>
 							</div>
@@ -456,14 +456,14 @@
 										<i class="bx bx-support"><span class="sr-only">icon</span></i>
 									</span>
 									<h3 class="mb-4">Our Phones</h3>
-									<p><a href="tel:+0967293082">+0967293082 - Mobile</a> <br><a href="tel:+0967293082">+0967293082 - WhatsApp</a></p>
+									<p><a href="tel:+0967293082">+260 967293082 - Mobile</a> <br><a href="tel:+0967293082">+0967293082 - WhatsApp</a></p>
 								</li>
 								<li>
 									<span class="icnWrap rounded-circle d-flex align-items-center justify-content-center bg-white mx-auto mb-8">
 										<i class="bx bx-at"><span class="sr-only">icon</span></i>
 									</span>
 									<h3 class="mb-4">Our Emails</h3>
-									<p><a href="mailto:info@methusmsolutions.com">info@methusmsolutions.com</a> <br><a href="mailto:methus@gmail.com">methus@gmail.com</a></p>
+									<p><a href="mailto:perrydeedollarmethus.com">perrydeedollarmethus.com</a></p>
 								</li>
 							</ul>
 						</div>
@@ -482,23 +482,13 @@
 							<!-- ftSocialNetworks -->
 							<ul class="list-unstyled ftSocialNetworks d-flex flex-wrap justify-content-center justify-content-md-end">
 								<li>
-									<a href="javascript:void(0);">
+									<a href="https://www.facebook.com/102131185820936" target="_blank">
 										<i class="bx bxl-facebook"><span class="sr-only">facebook</span></i>
 									</a>
 								</li>
 								<li>
-									<a href="javascript:void(0);">
-										<i class="bx bxl-twitter"><span class="sr-only">twitter</span></i>
-									</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);">
-										<i class="bx bxl-youtube"><span class="sr-only">youtube</span></i>
-									</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);">
-										<i class="bx bxl-linkedin"><span class="sr-only">linkedin</span></i>
+									<a href="https://www.instagram.com/perrydeedollarmethus/" target="_blank">
+										<i class="bx bxl-instagram"><span class="sr-only">instagram</span></i>
 									</a>
 								</li>
 							</ul>
@@ -527,7 +517,16 @@
 	<script src="js/jqueryCustom.js"></script>
 	<!-- include fontAwesome -->
 	<script src="../../../kit.fontawesome.com/391f644c42.js"></script>
+	<script type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+	</script>
+	<script src="script.js" type="text/javascript">
+	(function(){
+		emailjs.init({
+			publicKey: "Bicdh0v8gGc4gFPqOMMdW",
+		});
+	})();
+	</script>
 </body>
 
-<!-- Mirrored from htmlbeans.com/html/consults/home.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Jul 2024 19:34:09 GMT -->
 </html>
