@@ -1,0 +1,47 @@
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+
+    <img name="slide" style="max-width: 100%; height: 90%;" />
+
+    <script> 
+    var i = 0; 			// Start Point
+    var images = [];	// Images Array
+    var time = 3000;	// Time Between Switch
+        
+    // Image List
+    images[0] = "../images/2a.png";
+    images[1] = "b.jpg";
+    images[2] = "11.jpg";
+    images[3] = "f.jpg";
+    images[4] = "x.jpg";
+    images[5] = "h.jpg";
+    images[6] = "hb.jpg";
+    images[7] = "hu.jpg";
+    images[8] = "m.jpg";
+    images[9] = "t.jpg";
+    images[10] = "z.jpg";
+    images[11] = "n.jpg";
+    images[12] = "i.jpg";
+    images[13] = "sd.jpg";
+
+   
+    // Change Image
+    function changeImg(){
+        document.slide.src = images[i];
+
+        // Check If Index Is Under Max
+        if(i < images.length - 1){
+        // Add 1 to Index
+        i++; 
+        } else { 
+            // Reset Back To O
+            i = 0;
+        }
+
+        // Run function every x seconds
+        setTimeout("changeImg()", time);
+    }
+
+    // Run function when page loads
+    window.onload=changeImg;
+    </script>
+</div>
